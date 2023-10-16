@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Yummy Stuff</title>
+    </head>
+    <body>
+        <h1>Yummy Stuff</h1>
+
+        <select id="selRecipe" onchange="optionChanged(this.value)"></select>
+
+        <h2 id="recipe_name">Recipe Name</h2>
+        <p id="recipe_rating"></p>
+        <div id="image"></div>
+        <a id="recipe_link" href="" target="_blank">See on BBC Good Food</a>
+
+        <div id="voting">
+            <h3>Vote</h3>
+            <button name="vote" type="submit" value="3" onclick="voteClick(this.value)">Cook it now!</button>
+            <button name="vote" type="submit" value="2" onclick="voteClick(this.value)">On the list</button>
+            <button name="vote" type="submit" value="1" onclick="voteClick(this.value)">Maybe...</button>
+            <button name="vote" type="submit" value="0" onclick="voteClick(this.value)">No way!</button>
+        </div>
+
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="static/js/data.js"></script>
+        <script src="static/js/logic.js"></script>
+    </body>
+</html>
